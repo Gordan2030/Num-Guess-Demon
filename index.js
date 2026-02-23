@@ -1,19 +1,18 @@
 let numbers = [];
 let ph 
 
-for (let i = 0; i < 4; i++) {
-    ph = Math.floor(Math.random() * 9) + 1
-
-    while (numbers.includes(ph)) ph = Math.floor(Math.random() * 9) + 1
-
-    numbers.push(ph)
-
-}
-
 let playing = false;
 let guessed = [];
 
 document.getElementById("sub").onclick = function() {
+    for (let i = 0; i < 4; i++) {
+        ph = Math.floor(Math.random() * 9) + 1
+    
+        while (numbers.includes(ph)) ph = Math.floor(Math.random() * 9) + 1
+    
+        numbers.push(ph)
+
+    }
 
     playing = true
 
@@ -48,4 +47,5 @@ document.getElementById("sub").onclick = function() {
             playing = false
         }
     }
+
 }
