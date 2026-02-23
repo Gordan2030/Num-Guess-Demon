@@ -18,10 +18,11 @@ document.getElementById("sub").onclick = function() {
 
     playing = true
 
+    let attempts = 0;
+
     while(playing) {
         let correct = 0;
         let incor = 0;
-        let attempts = 0;
         attempts++;
 
         guessed = window.prompt("Enter guess(type 'give up' if you give up): ")
@@ -51,5 +52,6 @@ document.getElementById("sub").onclick = function() {
     }
 
 }
+
 
 
