@@ -5,6 +5,7 @@ let playing = false;
 let guessed = [];
 
 document.getElementById("sub").onclick = function() {
+    numbers = []
     for (let i = 0; i < 4; i++) {
         ph = Math.floor(Math.random() * 9) + 1
     
@@ -49,3 +50,4 @@ document.getElementById("sub").onclick = function() {
     }
 
 }
+
